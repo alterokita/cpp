@@ -86,6 +86,9 @@ namespace my_raii
 		}
 	}
 
+	// 这个类只适用于 shape 类
+	// 该类对象行为不够像指针
+	// 拷贝该类对象会引发程序异常
 	class shape_wrapper
 	{
 	public:
